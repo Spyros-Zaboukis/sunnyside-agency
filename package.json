@@ -1,0 +1,19 @@
+{
+  "name": "sunnyside-agency",
+  "version": "1.0.0",
+  "description": "Agency Site Web ",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./sass/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spyros-Zaboukis/sunnyside-agency.git"
+  },
+  "author": "Spyros Zaboukis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Spyros-Zaboukis/sunnyside-agency/issues"
+  },
+  "homepage": "https://github.com/Spyros-Zaboukis/sunnyside-agency#readme"
+}
