@@ -1,9 +1,181 @@
-body {
-  font-family: "Barlow", sans-serif;
+/*---------- Variables ----------*/
+/*-- Primary colors --*/
+/*-- secondary colors --*/
+/*
+font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif;
+*/
+* {
+  margin: 0%;
+  padding: 0%;
+}
+* body {
+  width: 100%;
+  font-size: 18px;
 }
 
-h1 {
-  font-family: "Fraunces", serif;
+/*------------ HEADER --------------*/
+.header {
+  background-image: url("./../img/mobile/image-header.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100vw;
+}
+.header__heading {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 2.6rem;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  margin-top: 8rem;
+}
+.header__img {
+  position: relative;
+  width: 10%;
+  margin-left: 45%;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+}
+
+/*----------- NAVBAR -----------------*/
+label {
+  display: none;
+  margin-left: 90%;
+  margin-top: -40px;
+}
+
+label, #toggle {
+  display: none;
+}
+
+nav {
+  height: 60px;
+}
+
+nav .main_pages {
+  display: none;
+  flex-direction: column;
+  background: #48435C;
+  height: 220px;
+}
+
+nav .main_pages a {
+  width: 50%;
+}
+
+label {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+#toggle:checked + .main_pages {
+  display: flex;
+}
+
+.logo {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+/*----section template-----*/
+.section__heading {
+  font-size: 2.1rem;
+  font-family: "Fraunces";
+  text-align: center;
+  color: #23303e;
+  filter: blur(0.03rem);
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+}
+.section__heading--backgrounted {
+  font-size: 1.7rem;
+  font-family: "Fraunces";
+  text-align: center;
+  color: #23303e;
+  filter: blur(0.03rem);
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section__heading--secondary {
+  font-size: 1rem;
+  font-family: "Fraunces";
+  text-align: center;
+  color: #23303e;
+  filter: blur(0.03rem);
+  width: 85%;
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+.section__img {
+  width: 100%;
+}
+.section__img--secondary {
+  border-radius: 50%;
+  width: 4.6rem;
+  margin-top: 4rem;
+  margin-left: 40%;
+}
+.section__text {
+  font-family: "Barlow";
+  color: #818498;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  word-spacing: 0.15rem;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  line-height: 150%;
+}
+.section__text--backgrounted {
+  font-family: "Barlow";
+  font-size: 1rem;
+  color: #818498;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  word-spacing: 0.1rem;
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+  line-height: 150%;
+}
+.section__learnMore {
+  text-align: center;
+}
+.section__backgrounted1 {
+  background-image: url("./../img/mobile/image-graphic-design.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 25rem;
+}
+.section__backgrounted2 {
+  background-image: url("./../img/mobile/image-photography.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 25rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

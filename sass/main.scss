@@ -1,7 +1,215 @@
+/*---------- Variables ----------*/
+
+/*-- Primary colors --*/
+$red: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$cyan: hsl(167, 40%, 24%);
+$blue :  hsl(198, 62%, 26%);
+$moderate: hsl(168, 34%, 41%);
+
+/*-- secondary colors --*/
+
+$primaryTxtColor: hsl(212, 27%, 19%);
+$secondaryTxtColor: hsl(213, 9%, 39%);
+$clearTxtColor : hsl(232, 10%, 55%);
+$lightColor: hsl(210, 4%, 67%);
+$extraLightColor: hsl(0, 0%, 100%);
+
+/*
+font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif;
+*/
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+
 body{
-    font-family: 'Barlow', sans-serif;
+    width: 100%;
+    font-size: 18px;
+}
 }
 
-h1{
-    font-family: 'Fraunces', serif;
+
+
+/*------------ HEADER --------------*/
+
+
+.header {
+    background-image: url('./../img/mobile/image-header.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100vw;
+    &__heading{
+        font-family: 'Fraunces';
+        font-weight: 900;;
+        font-size: 2.6rem;
+        text-align: center;
+        color: $extraLightColor;
+        text-transform: uppercase;
+        letter-spacing: 0.4rem;
+        margin-top: 8rem;
+    }
+    &__img{
+        position: relative;
+        width: 10%;
+        margin-left: 45%;
+        margin-top : 3rem;
+        margin-bottom: 10rem;
+    }
+}
+
+
+/*----------- NAVBAR -----------------*/
+
+label
+{
+    display: none;
+    margin-left: 90%;
+    margin-top: -40px;
+}
+label, #toggle
+{
+    display: none;
+}
+nav
+    {
+        height: 60px;
+    }
+
+    nav .main_pages 
+    {
+        display: none;
+        flex-direction: column;
+        background: #48435C;
+        height: 220px;
+    }
+ 
+    nav .main_pages a {
+        width: 50%;
+    }
+    label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+
+    #toggle:checked + .main_pages {
+        display: flex;
+    }
+
+
+.logo{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+
+/*----section template-----*/
+
+
+.section{
+    &__heading{
+        font-size: 2.1rem;
+        font-family: 'Fraunces';
+        text-align: center;
+        color: $primaryTxtColor;
+        filter: blur(0.03rem);
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2.5rem;
+        &--backgrounted{
+            font-size: 1.7rem;
+            font-family: 'Fraunces';
+            text-align: center;
+            color: $primaryTxtColor;
+            filter: blur(0.03rem);
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &--secondary{
+            font-size: 1rem;
+            font-family: 'Fraunces';
+            text-align: center;
+            color: $primaryTxtColor;
+            filter: blur(0.03rem);
+            width: 85%;
+            margin-top: 4rem;
+            margin-left: auto;
+            margin-right: auto;
+            text-transform: uppercase;
+            letter-spacing: 0.3rem;
+        }
+    }
+    &__img{
+        width: 100%;
+        &--secondary{
+            border-radius: 50%;
+            width: 4.6rem;
+            margin-top: 4rem;
+            margin-left: 40%;
+        }
+    }
+    &__text{
+        font-family: 'Barlow';
+        color: $clearTxtColor;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        word-spacing: 0.15rem;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+        line-height : 150%;
+        &--backgrounted{
+            font-family: 'Barlow';
+            font-size: 1rem;
+            color: $clearTxtColor;
+            text-align: center;
+            width: 90%;
+            margin: auto;
+            word-spacing: 0.10rem;
+            padding-bottom: 5rem;
+            padding-top: 2rem;
+            line-height : 150%; 
+        }
+    }
+    &__learnMore{
+        text-align: center;
+    }
+    &__backgrounted1{
+        background-image: url('./../img/mobile/image-graphic-design.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center;
+        padding-top: 25rem;
+    }
+    &__backgrounted2{
+        background-image: url('./../img/mobile/image-photography.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center;
+        padding-top: 25rem;
+    }
+}
+
+
+
+
+
+
+.gallery{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
 }

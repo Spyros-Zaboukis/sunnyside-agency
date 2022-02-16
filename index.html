@@ -24,114 +24,123 @@
 <body>
     <main>
 <!-------------------------------------- HEADER ---------------------------------------------------------------------->
-   <header>
-    <nav>
-        <ul>
-            <li><a href="XXX">Sunnyside</a></li>
-            <li><a href="XXX">About</a></li>
-            <li><a href="XXX">Services</a></li>
-            <li><a href="XXX">Projets</a></li>
+   <header class="header">
+    <nav class="header__nav">
+        <ul class="header__list">
+            <img class="logo" src="./img/logo.svg"/>
+            <label for="toggle">☰</label>
+            <input type="checkbox" id="toggle">
+
+            <div class="main_pages">
+                <li class="header__item"><a  class="header__link" href="XXX">Sunnyside</a></li>
+                <li class="header__item"><a class="header__link" href="XXX">About</a></li>
+                <li class="header__item"><a class="header__link" href="XXX">Services</a></li>
+                <li class="header__item"><a class="header__link" href="XXX">Projets</a></li>
+            </div>
         </ul>
     </nav>
 
-    <h1>We are creatives</h1>
+    <h1 class="header__heading">We are creatives</h1>
+
+    <img class="header__img" src="./img/icon-arrow-down.svg"/>
 
     </header> 
-<!-------------------------------------- SECTION 1 ---------------------------------------------------------------------->
+<!-------------------------------------- SECTION PROMO ---------------------------------------------------------------------->
         
-        <section>
-
-            <h2>Transform your brand</h2>
+        <section class="section">
 
             <picture>
                 <source media="(max-width: 600px)" srcset="./img/mobile/image-transform.jpeg">
                 <source media="(min-width: 601px)" srcset="./img/desktop/image-transform.jpeg">
-                <img src="./img/mobile/image-transform.jpeg" alt="Image Sunnyside Egg">
+                <img class="section__img" src="./img/mobile/image-transform.jpeg" alt="Image Sunnyside Egg">
             </picture>
 
+            <h2 class="section__heading">Transform your brand</h2>
 
-            <p>we are a full service creative agency specializing in helping brands grow fast. Engage your clients throught 
-            compelling visuals that do most of the marketing for you. - learn more</p>
+            <p class="section__text">We are a full service creative agency specializing in helping brands grow fast. Engage your clients throught 
+            compelling visuals that do most of the marketing for you.</p>
+            <p class="section__learnMore">learn more</p>
 
         </section>
 
-<!-------------------------------------- SECTION 2 ---------------------------------------------------------------------->
+<!-------------------------------------- SECTION TEAM ---------------------------------------------------------------------->
 
+        <section>
+            <picture>
+                <source media="(max-width: 600px)" srcset="./img/mobile/image-stand-out.jpeg">
+                <source media="(min-width: 601px)" srcset="./img/desktop/image-stand-out.jpeg">
+                <img class="section__img" src="./img/mobile/image-stand-out.jpeg" alt="Image of pink glass">
+            </picture>
 
-        <picture>
-            <source media="(max-width: 600px)" srcset="./img/mobile/image-stand-out.jpeg">
-            <source media="(min-width: 601px)" srcset="./img/desktop/image-stand-out.jpeg">
-            <img src="./img/mobile/image-stand-out.jpeg" alt="Image of pink glass">
-          </picture>
+            <h2 class="section__heading">Stand out to the right audience</h2>                     
 
-         <h2>Stand out to the right audience</h2>                     
+            <p class="section__text">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your
+            brand in digital places.</p>
+            <p class="section__learnMore">learn more</p>
 
-        <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your
-        brand in digital places.  - learn more</p>
+        </section>
+<!-------------------------------------- SECTION TALLENT ---------------------------------------------------------------------->
+            <section class="section__backgrounted1">
+                <h3 class="section__heading--backgrounted">Graphic Design</h3>
 
+                    <p class="section__text--backgrounted">Great design make you memorable. We deliver atwork that underscores your brand message and captures potential client's attention.</p>
+                </section>
+                <section class="section__backgrounted2">
+                <h3 class="section__heading--backgrounted">Photography</h3>
+                    <p  class="section__text--backgrounted">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+            </section>
+<!-------------------------------------- SECTION ADOPTER ---------------------------------------------------------------------->
 
-<!-------------------------------------- SECTION 3 ---------------------------------------------------------------------->
-
-        <h2>Graphic Design</h2>
-
-        <p>Great design make you memorable. We deliver atwork that underscores your brand message and captures potential client's attention.</p>
-
-        <h2>Photography</h2>
-            <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
-
-
-<!-------------------------------------- SECTION 4 ---------------------------------------------------------------------->
-
-        <h3>Clients testimonials</h3>
-
-        <img src="./img/people/image-emily.jpeg"/>
-        <p>We put our trust in sunnyside and they delivred, making sure our needs were met and deadlines where always hit.
+        <h3 class="section__heading--secondary">Clients testimonials</h3>
+            
+        <img class="section__img--secondary" src="./img/people/image-emily.jpeg"/>
+        <p class="section__text">We put our trust in sunnyside and they delivred, making sure our needs were met and deadlines where always hit.
             Emily R  Marketing Director</p>
         
-            <img src="./img/people/image-thomas.jpeg"/>
+            <img class="section__img--secondary" src="./img/people/image-thomas.jpeg"/>
 
-        <p>>Sunyside's enthusiasme compled with their keen interest in our brand's succes made it a satisfying and enjoyable experiance.
+        <p class="section__text">Sunyside's enthusiasme compled with their keen interest in our brand's succes made it a satisfying and enjoyable experiance.
             Thomas S Chief operating officier</p>
 
-        <img src="./img/people/image-thomas.jpeg"/>
+        <img class="section__img--secondary" src="./img/people/image-jennie.jpeg"/>
 
-        <p>Incredible end result ! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+        <p class="section__text">Incredible end result ! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
             Jenny F
             Business owner </p>
 
-<!-------------------------------------- SECTION 5 ---------------------------------------------------------------------->
-
-            <picture>
+<!-------------------------------------- SECTION PANNEL PHOTO ---------------------------------------------------------------------->
+            <section class="gallery">
+            <picture class="gallery__boxMedia">
                 <source media="(max-width: 600px)" srcset="./img/mobile/image-gallery-milkbottles.jpeg">
                 <source media="(min-width: 601px)" srcset="./img/desktop/image-gallery-milkbottles.jpeg">
-                <img src="./img/mobile/image-gallery-milkbottles.jpeg" alt="Image milk bottle">
+                <img class="gallery__img" src="./img/mobile/image-gallery-milkbottles.jpeg" alt="Image milk bottle">
               </picture>
 
 
 
-        <picture>
+        <picture class="gallery__boxMedia">
             <source media="(max-width: 600px)" srcset="./img/mobile/image-gallery-orange.jpeg">
             <source media="(min-width: 601px)" srcset="./img/desktop/image-gallery-orange.jpeg">
-            <img src="./img/mobile/image-gallery-orange.jpeg" alt="Image of orange and plate">
+            <img class="gallery__img"  src="./img/mobile/image-gallery-orange.jpeg" alt="Image of orange and plate">
           </picture>
 
 
 
-        <picture>
+        <picture class="gallery__boxMedia">
             <source media="(max-width: 600px)" srcset="./img/mobile/image-gallery-cone.jpeg">
             <source media="(min-width: 601px)" srcset="./img/desktop/image-gallery-cone.jpeg">
-            <img src=".img/mobile/image-gallery-cone.jpeg" alt="Image of icecream cone">
+            <img class="gallery__img"  src=".img/mobile/image-gallery-cone.jpeg" alt="Image of icecream cone">
           </picture>
 
 
 
 
-        <picture>
+        <picture class="gallery__boxMedia">
             <source media="(max-width: 600px)" srcset="./img/mobile/image-gallery-sugar-cubes.jpeg">
             <source media="(min-width: 601px)" srcset="./img/desktop/image-gallery-sugarcubes.jpeg">
-            <img src="./img/mobile/image-gallery-sugar-cubes.jpeg" alt="Image with sugger cube in pyramid">
+            <img class="gallery__img"  src="./img/mobile/image-gallery-sugar-cubes.jpeg" alt="Image with sugger cube in pyramid">
           </picture>
-
+        </section>
 <!-------------------------------------- FOOTER ---------------------------------------------------------------------->
 
 
