@@ -24,12 +24,13 @@ font-family: 'Fraunces', serif;
 *{
     margin: 0%;
     padding: 0%;
+}
 
 body{
     width: 100%;
     font-size: 18px;
 }
-}
+
 
 
 
@@ -50,14 +51,17 @@ body{
         color: $extraLightColor;
         text-transform: uppercase;
         letter-spacing: 0.4rem;
-        margin-top: 8rem;
+        margin-top: 3.8rem;
     }
     &__img{
         position: relative;
         width: 10%;
         margin-left: 45%;
         margin-top : 3rem;
-        margin-bottom: 10rem;
+        margin-bottom: 9rem;
+    }
+    &__list{
+        padding-top: 1rem;
     }
 }
 
@@ -208,8 +212,42 @@ nav
 
 .gallery{
         display: grid;
+        width: 100%;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
+        &__img{
+            width: 100%;
+            margin-top: -1rem;
+        }
+}
+
+.footer{
+    background-color: $moderate ;
+    color: $cyan;
+    text-align: center;
+    margin-top: -1em;
+    &__heading{
+        padding-top: 4rem;
+        font-family: 'Barlow';
+        font-weight:900;
+        font-weight: bolder;
+        margin-bottom: 2rem;
+        }
+    &__link{
+        text-align: center;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        font-family:'Barlow' ;
+    }
+    &__word{
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+    &__icon{
+        padding-bottom: 7rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
 }
