@@ -5,7 +5,7 @@ $red: hsl(7, 99%, 70%);
 $yellow: hsl(51, 100%, 49%);
 $cyan: hsl(167, 40%, 24%);
 $blue :  hsl(198, 62%, 26%);
-$moderate: hsl(168, 34%, 41%);
+$moderate: hsl(168, 46%, 61%);
 
 /*-- secondary colors --*/
 
@@ -51,13 +51,13 @@ body{
         color: $extraLightColor;
         text-transform: uppercase;
         letter-spacing: 0.4rem;
-        margin-top: 3.8rem;
+        margin-top: 5rem;
     }
     &__img{
         position: relative;
         width: 10%;
         margin-left: 45%;
-        margin-top : 3rem;
+        margin-top : 4rem;
         margin-bottom: 9rem;
     }
     &__list{
@@ -144,7 +144,7 @@ nav
             font-size: 1rem;
             font-family: 'Fraunces';
             text-align: center;
-            color: $primaryTxtColor;
+            color: $clearTxtColor;
             filter: blur(0.03rem);
             width: 85%;
             margin-top: 4rem;
@@ -176,7 +176,7 @@ nav
         &--backgrounted{
             font-family: 'Barlow';
             font-size: 1rem;
-            color: $clearTxtColor;
+            color: $secondaryTxtColor;
             text-align: center;
             width: 90%;
             margin: auto;
@@ -188,6 +188,43 @@ nav
     }
     &__learnMore{
         text-align: center;
+        &::before{
+            content:'Learn More';
+            color:$secondaryTxtColor;
+            font-family: 'Fraunces';
+            font-size: 1rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+        }
+        &__hr{
+            justify-content: center;
+            height: 0.6em;
+            color: $yellow;
+            background-color: $yellow;
+            border: 0px solid $yellow;
+            border-radius: 20%;
+            width: 6em;
+            margin-bottom: 3.5em;
+            margin-top: -0.4em;
+            margin-left: 30%;
+            width: 40%;
+            opacity: 40%;
+            &--red{
+                justify-content: center;
+                height: 0.6em;
+                color: $red;
+                background-color: $red;
+                border: 0px solid $red;
+                border-radius: 20%;
+                width: 6em;
+                margin-bottom: 3.5em;
+                margin-top: -0.4em;
+                margin-left: 30%;
+                width: 40%;
+                opacity: 40%;
+            }
+        }
     }
     &__backgrounted1{
         background-image: url('./../img/mobile/image-graphic-design.jpeg');
@@ -230,10 +267,11 @@ nav
     margin-top: -1em;
     &__heading{
         padding-top: 4rem;
-        font-family: 'Barlow';
-        font-weight:900;
+        font-family: 'Fraunces';
         font-weight: bolder;
+        font-size: 2.2rem;
         margin-bottom: 2rem;
+        filter : blur(0.015em);
         }
     &__link{
         text-align: center;
@@ -244,8 +282,10 @@ nav
     &__word{
         margin-top: 3rem;
         margin-bottom: 5rem;
+        color: $cyan;
     }
     &__icon{
+        filter : blur(0.01em);
         padding-bottom: 7rem;
         margin-left: 1rem;
         margin-right: 1rem;
