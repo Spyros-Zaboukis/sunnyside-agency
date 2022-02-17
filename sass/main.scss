@@ -42,7 +42,10 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
-    width: 100vw;
+    width: 100nw;
+    &__nav{
+        margin-bottom: 7em;
+    }
     &__heading{
         font-family: 'Fraunces';
         font-weight: 900;;
@@ -51,7 +54,7 @@ body{
         color: $extraLightColor;
         text-transform: uppercase;
         letter-spacing: 0.4rem;
-        margin-top: 5rem;
+        margin-bottom:5em;
     }
     &__img{
         position: relative;
@@ -312,17 +315,15 @@ nav
 
 
 
-@media (min-width: 601px) {
+@media (min-width: 600px) {
+    
     #toggle:checked{
         display : none;
     }
     label{
         display: none;
     }
-
-
     nav{
-
     & .main_pages{
         display: none;
         flex-direction: row;
@@ -335,29 +336,31 @@ nav
         margin-top: -3rem;
         }
     }
-}
-
-.header{
-    &__heading{
-        font-size: 3.2em;
-    }
-    &__img{
-        
-    }
-    &__link{
-    text-decoration: none;
-    margin-right: 2.5em;
-    color: $extraLightColor;
-    &--contact{
-        background-color: $extraLightColor;
-        color: $primaryTxtColor;
-        padding-left: 2.4em;
-        padding-right: 2.4em;
-        padding-top: 0.8em;
-        padding-bottom: 0.8em;
-        border-radius: 4em;
-        height: 3em;
+    .header{
+        background-image: url('./../img/desktop/image-header.jpeg');
+        &__heading{
+            font-size: 3.2em;
+        }
+        &__img{
+               margin-top: 1em;
+                width: 5em;
+        }
+        &__link{
         text-decoration: none;
+        margin-right: 2.5em;
+        color: $extraLightColor;
+        &--contact{
+            background-color: $extraLightColor;
+            color: $primaryTxtColor;
+            padding-left: 2.4em;
+            padding-right: 2.4em;
+            padding-top: 0.8em;
+            padding-bottom: 0.8em;
+            border-radius: 4em;
+            height: 3em;
+            text-decoration: none;
+            }
         }
     }
 }
+

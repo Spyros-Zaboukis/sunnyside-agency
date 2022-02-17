@@ -21,7 +21,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-  width: 100vw;
+  width: 100nw;
+}
+.header__nav {
+  margin-bottom: 7em;
 }
 .header__heading {
   font-family: "Fraunces";
@@ -31,7 +34,7 @@ body {
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
-  margin-top: 5rem;
+  margin-bottom: 5em;
 }
 .header__img {
   position: relative;
@@ -271,7 +274,7 @@ label {
   margin-right: 1rem;
 }
 
-@media (min-width: 601px) {
+@media (min-width: 600px) {
   #toggle:checked {
     display: none;
   }
@@ -291,25 +294,33 @@ label {
     margin-right: 3rem;
     margin-top: -3rem;
   }
-}
-.header__heading {
-  font-size: 3.2em;
-}
-.header__link {
-  text-decoration: none;
-  margin-right: 2.5em;
-  color: white;
-}
-.header__link--contact {
-  background-color: white;
-  color: #23303e;
-  padding-left: 2.4em;
-  padding-right: 2.4em;
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
-  border-radius: 4em;
-  height: 3em;
-  text-decoration: none;
+
+  .header {
+    background-image: url("./../img/desktop/image-header.jpeg");
+  }
+  .header__heading {
+    font-size: 3.2em;
+  }
+  .header__img {
+    margin-top: 1em;
+    width: 5em;
+  }
+  .header__link {
+    text-decoration: none;
+    margin-right: 2.5em;
+    color: white;
+  }
+  .header__link--contact {
+    background-color: white;
+    color: #23303e;
+    padding-left: 2.4em;
+    padding-right: 2.4em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    border-radius: 4em;
+    height: 3em;
+    text-decoration: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
