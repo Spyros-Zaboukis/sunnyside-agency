@@ -1,0 +1,64 @@
+/*----------- NAVBAR -----------------*/
+
+label
+{
+    display: none;
+    margin-left: 90%;
+    margin-top: -40px;
+}
+label, #toggle
+{
+    display: none;
+}
+nav
+    {
+        height: 60px;
+    }
+
+    nav .main_pages
+    {
+        display: none;
+        flex-direction: column;
+        background: $extraLightColor;
+        width: 70%;
+        margin-left: 15%;
+        list-style-type: none;
+        text-align: center;   
+        clip-path: polygon(0 21%, 85% 21%, 100% 0, 100% 21%, 100% 100%, 50% 100%, 0 100%);
+        padding-bottom: 2rem;
+        padding-top: 4rem;
+
+    }
+ 
+    nav .main_pages a {
+        width: 50%;
+        text-decoration: none;
+        color: $clearTxtColor;
+        font-family: 'Barlow';
+        line-height: 250%;
+
+   
+    }
+
+    /*-------------------------*/
+    label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+
+
+    #toggle:checked + .main_pages {
+        display: flex;
+    }
+
+
+.logo{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}

@@ -1,10 +1,4 @@
-/*---------- Variables ----------*/
-/*-- Primary colors --*/
-/*-- secondary colors --*/
-/*
-font-family: 'Barlow', sans-serif;
-font-family: 'Fraunces', serif;
-*/
+/*------ROOT BODY -----*/
 * {
   margin: 0%;
   padding: 0%;
@@ -15,8 +9,12 @@ body {
   font-size: 18px;
 }
 
-/*--------------------------------------------- MIXINES -----------------------------------------------------------------*/
-/*------------ HEADER --------------*/
+/*------------------------ VARIABLES ----------------------------------*/
+/*---------- Variables ----------*/
+/*-- Primary colors --*/
+/*-- secondary colors --*/
+/*------------------------ MIXINES ----------------------------------*/
+/*------------------------ HEADER ------------------------------------*/
 .header {
   background-image: url("./../img/mobile/image-header.jpeg");
   background-size: cover;
@@ -49,6 +47,7 @@ body {
   padding-top: 1rem;
 }
 
+/*------------------------ NAVBAR ------------------------------------*/
 /*----------- NAVBAR -----------------*/
 label {
   display: none;
@@ -64,7 +63,6 @@ nav {
   height: 60px;
 }
 
-/* attention spy c'est ici qu'il ya le bug du menu !!!! */
 nav .main_pages {
   display: none;
   flex-direction: column;
@@ -106,7 +104,7 @@ label {
   margin-left: 1rem;
 }
 
-/*----section template-----*/
+/*------------------------ NAVBAR ------------------------------------*/
 .section__content {
   display: flex;
   flex-direction: column;
@@ -254,9 +252,11 @@ label {
   color: #a7abae;
   padding-top: 4rem;
   font-size: 0.8rem;
+  margin-bottom: 2rem;
 }
 
 .gallery {
+  margin-top: 4rem;
   display: grid;
   width: 100%;
   grid-template-columns: repeat(2, 1fr);
@@ -269,38 +269,7 @@ label {
   margin-top: -1rem;
 }
 
-.footer {
-  background-color: #6ec9b7;
-  color: #25564b;
-  text-align: center;
-  margin-top: -1em;
-}
-.footer__heading {
-  padding-top: 4rem;
-  font-family: "Fraunces";
-  font-weight: bolder;
-  font-size: 2.2rem;
-  margin-bottom: 2rem;
-  filter: blur(0.015em);
-}
-.footer__link {
-  text-align: center;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  font-family: "Barlow";
-}
-.footer__word {
-  margin-top: 3rem;
-  margin-bottom: 5rem;
-  color: #25564b;
-}
-.footer__icon {
-  filter: blur(0.01em);
-  padding-bottom: 7rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
+/*------------------------ SECTION ------------------------------------*/
 @media (min-width: 600px) {
   /* #toggle:checked{
       display: none;
@@ -326,8 +295,8 @@ label {
     background-image: url("./../img/desktop/image-header.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    width: 100vw;
+    background-position: bottom;
+    width: 100nw;
   }
   .header__heading {
     font-size: 3.2em;
@@ -383,13 +352,15 @@ label {
     background-image: url("./../img/desktop/image-graphic-design.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
+    width: 100nw;
   }
   .section__backgrounted2 {
     background-image: url("./../img/desktop/image-photography.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
+    width: 100nw;
   }
   .section__text {
     width: 90%;
@@ -431,5 +402,44 @@ label {
     padding-bottom: 3rem;
   }
 }
+/*------------------------ FOOTER ------------------------------------*/
+.footer {
+  background-color: #6ec9b7;
+  color: #25564b;
+  text-align: center;
+  margin-top: -1em;
+}
+.footer__heading {
+  padding-top: 4rem;
+  font-family: "Fraunces";
+  font-weight: bolder;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  filter: blur(0.015em);
+}
+.footer__link {
+  text-align: center;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  font-family: "Barlow";
+}
+.footer__word {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  color: #25564b;
+}
+.footer__icon {
+  filter: blur(0.01em);
+  padding-bottom: 7rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/*------------ polices --------------
+
+font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif;
+
+*/
 
 /*# sourceMappingURL=style.css.map */

@@ -1,26 +1,4 @@
-/*---------- Variables ----------*/
-
-/*-- Primary colors --*/
-$red: hsl(7, 99%, 70%);
-$yellow: hsl(51, 100%, 49%);
-$cyan: hsl(167, 40%, 24%);
-$blue :  hsl(198, 62%, 26%);
-$moderate: hsl(168, 46%, 61%);
-
-/*-- secondary colors --*/
-
-$primaryTxtColor: hsl(212, 27%, 19%);
-$secondaryTxtColor: hsl(213, 9%, 39%);
-$clearTxtColor : hsl(232, 10%, 55%);
-$lightColor: hsl(210, 4%, 67%);
-$extraLightColor: hsl(0, 0%, 100%);
-
-
-/*
-font-family: 'Barlow', sans-serif;
-font-family: 'Fraunces', serif;
-*/
-
+/*------ROOT BODY -----*/
 
 *{
     margin: 0%;
@@ -32,451 +10,45 @@ body{
     font-size: 18px;
 }
 
+/*------------------------ VARIABLES ----------------------------------*/
 
-/*--------------------------------------------- MIXINES -----------------------------------------------------------------*/
+@import './utils/variables.scss';
 
+/*------------------------ MIXINES ----------------------------------*/
 
-@mixin background-Total {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    width: 100nw;
-}
+@import './utils/mixins.scss';
 
+/*------------------------ HEADER ------------------------------------*/
 
+@import './base/header.scss';
 
+/*------------------------ NAVBAR ------------------------------------*/
 
+@import './base/navBar.scss';
 
-/*------------ HEADER --------------*/
+/*------------------------ NAVBAR ------------------------------------*/
 
+@import './base/section.scss';
 
-.header {
-    background-image: url('./../img/mobile/image-header.jpeg');
-    @include background-Total ; 
-    &__nav{
-        margin-bottom: 7em;
-    }
-    &__heading{
-        font-family: 'Fraunces';
-        font-weight: 900;;
-        font-size: 2.6rem;
-        text-align: center;
-        color: $extraLightColor;
-        text-transform: uppercase;
-        letter-spacing: 0.4rem;
-        margin-bottom:5em;
-    }
-    &__img{
-        position: relative;
-        top: -12rem;
-        width: 10%;
-        margin-left: 45%;
-        margin-top : 4rem;
-        margin-bottom: 1rem;
-    }
-    &__list{
-        padding-top: 1rem;
-    }
-}
+/*------------------------ SECTION ------------------------------------*/
+
+@import './base/mediaQuery.scss';
 
 
-/*----------- NAVBAR -----------------*/
+/*------------------------ FOOTER ------------------------------------*/
 
-label
-{
-    display: none;
-    margin-left: 90%;
-    margin-top: -40px;
-}
-label, #toggle
-{
-    display: none;
-}
-nav
-    {
-        height: 60px;
-    }
-/* attention spy c'est ici qu'il ya le bug du menu !!!! */
+@import './base/footer.scss';
 
-    nav .main_pages
-    {
-        display: none;
-        flex-direction: column;
-        background: $extraLightColor;
-        width: 70%;
-        margin-left: 15%;
-        list-style-type: none;
-        text-align: center;   
-        clip-path: polygon(0 21%, 85% 21%, 100% 0, 100% 21%, 100% 100%, 50% 100%, 0 100%);
-        padding-bottom: 2rem;
-        padding-top: 4rem;
+/*------------ polices --------------
 
-    }
- 
-    nav .main_pages a {
-        width: 50%;
-        text-decoration: none;
-        color: $clearTxtColor;
-        font-family: 'Barlow';
-        line-height: 250%;
+font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif;
 
-   
-    }
-
-    /*-------------------------*/
-    label 
-    {
-        width: 30px;
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        font-size: 40px;
-        color: white;
-        cursor: pointer;
-    }
-
-
-    #toggle:checked + .main_pages {
-        display: flex;
-    }
-
-
-.logo{
-    margin-top: 1rem;
-    margin-left: 1rem;
-}
-
-
-/*----section template-----*/
-
-
-.section{
-    &__content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    &__heading{
-        font-size: 2.1rem;
-        font-family: 'Fraunces';
-        text-align: center;
-        color: $primaryTxtColor;
-        filter: blur(0.03rem);
-        width: 85%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 2.5rem;
-        &--backgrounted{
-            font-size: 1.7rem;
-            font-family: 'Fraunces';
-            text-align: center;
-            color: $primaryTxtColor;
-            filter: blur(0.03rem);
-            width: 85%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        &--secondary{
-            font-size: 1rem;
-            font-family: 'Fraunces';
-            text-align: center;
-            color: $clearTxtColor;
-            filter: blur(0.03rem);
-            width: 85%;
-            margin-top: 4rem;
-            margin-left: auto;
-            margin-right: auto;
-            text-transform: uppercase;
-            letter-spacing: 0.3rem;
-        }
-    }
-    &__img{
-        width: 100%;
-        &--secondary{
-            border-radius: 50%;
-            width: 4.6rem;
-            margin-top: 4rem;
-            margin-left: 40%;
-        }
-    }
-    &__text{
-        font-family: 'Barlow';
-        color: $clearTxtColor;
-        text-align: center;
-        width: 90%;
-        margin: auto;
-        word-spacing: 0.15rem;
-        margin-bottom: 3rem;
-        margin-top: 2rem;
-        line-height : 150%;
-        &--backgrounted{
-            font-family: 'Barlow';
-            font-size: 1rem;
-            color: $secondaryTxtColor;
-            text-align: center;
-            width: 80%;
-            margin: auto;
-            word-spacing: 0.10rem;
-            padding-bottom: 5rem;
-            padding-top: 2rem;
-            line-height : 150%;
-        }
-    }
-    &__learnMore{
-        text-align: center;
-        &::before{
-            content:'Learn More';
-            color:$secondaryTxtColor;
-            font-family: 'Fraunces';
-            font-size: 1rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
-        }
-        &__hr{
-            justify-content: center;
-            height: 0.6em;
-            color: $yellow;
-            background-color: $yellow;
-            border: 0px solid $yellow;
-            border-radius: 20%;
-            width: 6em;
-            margin-bottom: 4em;
-            margin-top: -0.4em;
-            margin-left: 30%;
-            width: 40%;
-            opacity: 40%;
-            &--red{
-                justify-content: center;
-                height: 0.6em;
-                color: $red;
-                background-color: $red;
-                border: 0px solid $red;
-                border-radius: 20%;
-                width: 6em;
-                margin-bottom: 3.5em;
-                margin-top: -0.4em;
-                margin-left: 30%;
-                width: 40%;
-                opacity: 40%;
-            }
-        }
-    }
-    &__backgrounted1{
-        background-image: url('./../img/mobile/image-graphic-design.jpeg');
-
-        @include background-Total();
-
-        padding-top: 25rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    &__backgrounted2{
-        background-image: url('./../img/mobile/image-photography.jpeg');
-        @include background-Total();
-        padding-top: 25rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    &__autor{
-        font-family: 'Fraunces';
-        font-weight: 600;
-        color: $primaryTxtColor;
-        padding-top: 4em;
-        justify-content: center;
-        margin-left: 40%;
-    }
-    &__post{
-        margin-left: 35%;
-        font-family: 'Barlow';
-        color: $lightColor;
-        padding-top: 4rem;
-        font-size: 0.8rem;
-    }
-}
+*/
 
 
 
 
 
 
-.gallery{
-        display: grid;
-        width: 100%;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        &__img{
-            width: 100%;
-            margin-top: -1rem;
-        }
-}
-
-.footer{
-    background-color: $moderate ;
-    color: $cyan;
-    text-align: center;
-    margin-top: -1em;
-    &__heading{
-        padding-top: 4rem;
-        font-family: 'Fraunces';
-        font-weight: bolder;
-        font-size: 2.2rem;
-        margin-bottom: 2rem;
-        filter : blur(0.015em);
-        }
-    &__link{
-        text-align: center;
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-        font-family:'Barlow' ;
-    }
-    &__word{
-        margin-top: 3rem;
-        margin-bottom: 5rem;
-        color: $cyan;
-    }
-    &__icon{
-        filter : blur(0.01em);
-        padding-bottom: 7rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-}
-
-
-
-
-
-
-@media (min-width: 600px) {
-
-    /* #toggle:checked{
-        display: none;
-
-    } */
-    label{
-        display: none;
-    }
-    .header__nav{
-    & .main_pages{
-        display: flex;
-        flex-direction: row;
-        background: transparent;   
-        list-style-type: none;
-        padding: 1em;
-        justify-content: right;
-        font-family: 'Barlow';
-        margin-right: 3rem;
-        margin-top: -3rem;
-        }
-    }
-    .header{
-        background-image: url('./../img/desktop/image-header.jpeg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 100vw;
-        &__heading{
-            font-size: 3.2em;
-            margin-bottom: 3rem;
-        }
-        &__img{
-                padding-top: 11rem;
-                margin-bottom : 8rem;
-                width: 2em;
-                margin-left: 48%;
-        }
-        &__link{
-        text-decoration: none;
-        margin-right: 2.5em;
-        color: $extraLightColor;
-        &--contact{
-            background-color: $extraLightColor;
-            color: $primaryTxtColor;
-            padding-left: 2.4em;
-            padding-right: 2.4em;
-            padding-top: 0.8em;
-            padding-bottom: 0.8em;
-            border-radius: 4em;
-            height: 3em;
-            text-decoration: none;
-            &:hover{
-                background-color : rgba(255,255,255,0.5);
-                color: white;
-                }
-            }
-        }
-    }
-    .section{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        grid-auto-flow: reverse;
-        display: flex;
-        flex-direction: row-reverse;
-        &--normal{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(1, 1fr);
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
-            margin-right: 3rem;
-            margin-top: -0.3rem;
-        }
-        &__backgrounted1{
-            background-image: url('./../img/desktop/image-graphic-design.jpeg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position:center;
-        }
-        &__backgrounted2{
-            background-image: url('./../img/desktop/image-photography.jpeg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position:center;
-        }
-        &__text{
-            width: 90%;
-        }
-        &--backgrounted{
-            width: 50%;
-        }
-    }
-    
-    .container{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        margin-left: -3rem;
-        margin-top: -0.3rem;
-    }
-    .people{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        width: 90%;
-        margin-left: 5%;
-    }
-    .gallery{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        margin-top: 5rem;
-    }
-    .footer__icons{
-        padding-bottom: 3rem;
-    }
-}
 
