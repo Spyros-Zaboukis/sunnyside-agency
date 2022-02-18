@@ -29,14 +29,13 @@
         <ul class="header__list">
             <img class="logo" src="./img/logo.svg"/>
             <label for="toggle">☰</label>
-            <input type="checkbox" id="toggle" checked>
+            <input class="testButton" type="checkbox" id="toggle"/>
 
             <div class="main_pages">
                 <li class="header__item"><a class="header__link" href="XXX">About</a></li>
                 <li class="header__item"><a class="header__link" href="XXX">Services</a></li>
                 <li class="header__item"><a class="header__link" href="XXX">Projets</a></li>
                 <li class="header__item"><a class="header__link--contact" href="XXX">Contact</a></li>
-
             </div>
         </ul>
     </nav>
@@ -50,36 +49,38 @@
         
         <section class="section">
 
-            <picture>
+            <picture class="section__img">
                 <source media="(max-width: 600px)" srcset="./img/mobile/image-transform.jpeg">
                 <source media="(min-width: 601px)" srcset="./img/desktop/image-transform.jpeg">
                 <img class="section__img" src="./img/mobile/image-transform.jpeg" alt="Image Sunnyside Egg">
             </picture>
-
+            <div class="section__content">
             <h2 class="section__heading">Transform your brand</h2>
 
             <p class="section__text">We are a full service creative agency specializing in helping brands grow fast. Engage your clients throught 
             compelling visuals that do most of the marketing for you.</p>
             <p class="section__learnMore"><hr  class="section__learnMore__hr"></p>
-
+            </div>
         </section>
 
 <!-------------------------------------- SECTION TEAM ---------------------------------------------------------------------->
 
-        <section>
-            <picture>
+        <section class="section--normal">
+            <picture class="section__img">
                 <source media="(max-width: 600px)" srcset="./img/mobile/image-stand-out.jpeg">
                 <source media="(min-width: 601px)" srcset="./img/desktop/image-stand-out.jpeg">
                 <img class="section__img" src="./img/mobile/image-stand-out.jpeg" alt="Image of pink glass">
             </picture>
-
+            <div class="section__content">
             <h2 class="section__heading">Stand out to the right audience</h2>                     
 
             <p class="section__text">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your
             brand in digital places.</p>
             <p class="section__learnMore"><hr  class="section__learnMore__hr--red"></p>
+            </div>
         </section>
 <!-------------------------------------- SECTION TALLENT ---------------------------------------------------------------------->
+            <div class="container">
             <section class="section__backgrounted1">
                 <h3 class="section__heading--backgrounted">Graphic Design</h3>
 
@@ -89,26 +90,32 @@
                 <h3 class="section__heading--backgrounted">Photography</h3>
                     <p  class="section__text--backgrounted">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
             </section>
+            </div>
 <!-------------------------------------- SECTION ADOPTER ---------------------------------------------------------------------->
 
         <h3 class="section__heading--secondary">Clients testimonials</h3>
-            
-        <img class="section__img--secondary" src="./img/people/image-emily.jpeg"/>
-        <p class="section__text">We put our trust in sunnyside and they delivred, making sure our needs were met and deadlines where always hit.</p>
+        <section class="people">
+        <div class="people__card">
+            <img class="section__img--secondary" src="./img/people/image-emily.jpeg"/>
+            <p class="section__text">We put our trust in sunnyside and they delivred, making sure our needs were met and deadlines where always hit.</p>
             <p><cite class="section__autor">Emily R.</cite></p>
              <p><cite class="section__post">Marketing Director</cite></p>
-        
+            </div>
+            
+        <div class="people__card">
             <img class="section__img--secondary" src="./img/people/image-thomas.jpeg"/>
+            <p class="section__text">Sunyside's enthusiasme compled with their keen interest in our brand's succes made it a satisfying and enjoyable experiance.</p>
+            <p><cite class="section__autor">Thomas S</cite></p>
+            <p><cite class="section__post">Chief Operating Officier</cite></p>
+            </div>
 
-        <p class="section__text">Sunyside's enthusiasme compled with their keen interest in our brand's succes made it a satisfying and enjoyable experiance.
-            Thomas S Chief operating officier</p>
-
-        <img class="section__img--secondary" src="./img/people/image-jennie.jpeg"/>
-
-        <p class="section__text">Incredible end result ! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-            Jenny F
-            Business owner </p>
-
+        <div class="people__card">
+            <img class="section__img--secondary" src="./img/people/image-jennie.jpeg"/>
+            <p class="section__text">Incredible end result ! Our sales increased over 400% when we worked with Sunnyside. Highly recommended! </p>
+            <p><cite class="section__autor">Jenny F</cite></p>
+            <p><cite class="section__post">Business owner</cite></p>
+            </div>
+        </section>
 <!-------------------------------------- SECTION PANNEL PHOTO ---------------------------------------------------------------------->
             <section class="gallery">
             <picture class="gallery__boxMedia">

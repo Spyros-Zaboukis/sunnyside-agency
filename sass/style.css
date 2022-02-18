@@ -38,10 +38,11 @@ body {
 }
 .header__img {
   position: relative;
+  top: -12rem;
   width: 10%;
   margin-left: 45%;
   margin-top: 4rem;
-  margin-bottom: 9rem;
+  margin-bottom: 1rem;
 }
 .header__list {
   padding-top: 1rem;
@@ -62,17 +63,29 @@ nav {
   height: 60px;
 }
 
+/* attention spy c'est ici qu'il ya le bug du menu !!!! */
 nav .main_pages {
   display: none;
   flex-direction: column;
-  background: #48435C;
-  height: 220px;
+  background: white;
+  width: 70%;
+  margin-left: 15%;
+  list-style-type: none;
+  text-align: center;
+  clip-path: polygon(0 21%, 85% 21%, 100% 0, 100% 21%, 100% 100%, 50% 100%, 0 100%);
+  padding-bottom: 2rem;
+  padding-top: 4rem;
 }
 
 nav .main_pages a {
   width: 50%;
+  text-decoration: none;
+  color: #818498;
+  font-family: "Barlow";
+  line-height: 250%;
 }
 
+/*-------------------------*/
 label {
   width: 30px;
   display: flex;
@@ -93,6 +106,11 @@ label {
 }
 
 /*----section template-----*/
+.section__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .section__heading {
   font-size: 2.1rem;
   font-family: "Fraunces";
@@ -205,6 +223,9 @@ label {
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .section__backgrounted2 {
   background-image: url("./../img/mobile/image-photography.jpeg");
@@ -212,6 +233,9 @@ label {
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .section__autor {
   font-family: "Fraunces";
@@ -275,16 +299,16 @@ label {
 }
 
 @media (min-width: 600px) {
-  #toggle:checked {
-    display: none;
-  }
+  /* #toggle:checked{
+      display: none;
 
+  } */
   label {
     display: none;
   }
 
-  nav .main_pages {
-    display: none;
+  .header__nav .main_pages {
+    display: flex;
     flex-direction: row;
     background: transparent;
     list-style-type: none;
@@ -297,13 +321,20 @@ label {
 
   .header {
     background-image: url("./../img/desktop/image-header.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
   }
   .header__heading {
     font-size: 3.2em;
+    margin-bottom: 3rem;
   }
   .header__img {
-    margin-top: 1em;
-    width: 5em;
+    padding-top: 11rem;
+    margin-bottom: 8rem;
+    width: 2em;
+    margin-left: 48%;
   }
   .header__link {
     text-decoration: none;
@@ -320,6 +351,81 @@ label {
     border-radius: 4em;
     height: 3em;
     text-decoration: none;
+  }
+  .header__link--contact:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+  }
+
+  .section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-auto-flow: reverse;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .section--normal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-right: 3rem;
+    margin-top: -0.3rem;
+  }
+  .section__backgrounted1 {
+    background-image: url("./../img/desktop/image-graphic-design.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .section__backgrounted2 {
+    background-image: url("./../img/desktop/image-photography.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .section__text {
+    width: 90%;
+  }
+  .section--backgrounted {
+    width: 50%;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-left: -3rem;
+    margin-top: -0.3rem;
+  }
+
+  .people {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 5rem;
+  }
+
+  .footer__icons {
+    padding-bottom: 3rem;
   }
 }
 
