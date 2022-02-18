@@ -15,6 +15,7 @@ body {
   font-size: 18px;
 }
 
+/*--------------------------------------------- MIXINES -----------------------------------------------------------------*/
 /*------------ HEADER --------------*/
 .header {
   background-image: url("./../img/mobile/image-header.jpeg");
@@ -170,7 +171,7 @@ label {
   font-size: 1rem;
   color: #5a636c;
   text-align: center;
-  width: 90%;
+  width: 80%;
   margin: auto;
   word-spacing: 0.1rem;
   padding-bottom: 5rem;
@@ -221,7 +222,8 @@ label {
   background-image: url("./../img/mobile/image-graphic-design.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
+  width: 100nw;
   padding-top: 25rem;
   display: flex;
   flex-direction: column;
@@ -231,7 +233,8 @@ label {
   background-image: url("./../img/mobile/image-photography.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
+  width: 100nw;
   padding-top: 25rem;
   display: flex;
   flex-direction: column;

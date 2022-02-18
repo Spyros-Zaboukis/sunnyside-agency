@@ -33,6 +33,18 @@ body{
 }
 
 
+/*--------------------------------------------- MIXINES -----------------------------------------------------------------*/
+
+
+@mixin background-Total {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100nw;
+}
+
+
+
 
 
 /*------------ HEADER --------------*/
@@ -40,10 +52,7 @@ body{
 
 .header {
     background-image: url('./../img/mobile/image-header.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    width: 100nw;
+    @include background-Total ; 
     &__nav{
         margin-bottom: 7em;
     }
@@ -205,7 +214,7 @@ nav
             font-size: 1rem;
             color: $secondaryTxtColor;
             text-align: center;
-            width: 90%;
+            width: 80%;
             margin: auto;
             word-spacing: 0.10rem;
             padding-bottom: 5rem;
@@ -255,9 +264,9 @@ nav
     }
     &__backgrounted1{
         background-image: url('./../img/mobile/image-graphic-design.jpeg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position:center;
+
+        @include background-Total();
+
         padding-top: 25rem;
         display: flex;
         flex-direction: column;
@@ -265,9 +274,7 @@ nav
     }
     &__backgrounted2{
         background-image: url('./../img/mobile/image-photography.jpeg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position:center;
+        @include background-Total();
         padding-top: 25rem;
         display: flex;
         flex-direction: column;
